@@ -40,7 +40,7 @@ from .video import VideoExtension
 from .emoticons import EmoticonExtension
 from .grid_tables import GridTableExtension
 from .comments import CommentsExtension
-from .smartLegend import SmartLegendExtension
+from .smart_legend import SmartLegendExtension
 from .headerDec import DownHeaderExtension
 from .smarty import SmartyExtension
 from .codehilite import CodeHiliteExtension
@@ -107,12 +107,12 @@ class ZdsExtension(Extension):
                          video_ext,  # Video support
                          #preprocess_ext,  # Preprocess support
                          gridtable_ext,  # Grid tables support
-                         legend_ext,  # Legend support
                          align_ext,  # Right align and center support
                          dheader_ext,  # Down Header support
                          mathjax_ext,  # Mathjax support
                          'markdown.extensions.fenced_code',
                          comment_ext,  # Comment support
+                         legend_ext,  # Legend support
                          ])
         md.registerExtensions(exts, {})
         if self.inline:
